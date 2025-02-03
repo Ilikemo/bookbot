@@ -31,9 +31,9 @@ def character_count(text):
 
 def cleanup_count(character_result):
     character_list = []
-    for char, count in character_result.items():
+    for char, count in character_result.items():     # iterate through the dictionary
         if char.isalpha():
-            character_list.append({"char": char, "num": count})
+            character_list.append({"char": char, "num": count})   # append the character and count to a list
     character_list.sort(key=sort_on, reverse=True)
     return character_list
 
