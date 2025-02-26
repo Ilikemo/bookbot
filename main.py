@@ -5,7 +5,7 @@ def main():
     character_result = character_count(text)     # count the characters in the text
     cleaned_result = cleanup_count(character_result)  # clean up the character count
 
-    print("--- Beginning the report ---")
+    print("--- Beginning the report ---")                               #prints the report
     print(f"The book contains {word_count} words.")
     for char in cleaned_result:
         print(f"The '{char['char']}' character was found {char['num']} times.")
